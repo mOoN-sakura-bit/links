@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #8b7355 0%, #6b5b47 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: rgba(245, 240, 230, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 40px 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 4px solid #d4c4a8;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #4a3f32;
+            margin-bottom: 8px;
+        }
+
+        .profile-bio {
+            font-size: 16px;
+            color: #6b5b47;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            background: #8b7355;
+            color: #f5f0e6;
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background-color 0.2s ease;
+            gap: 12px;
+        }
+
+        .link-item:hover {
+            background: #6b5b47;
+        }
+
+        .link-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .link-text {
+            flex: 1;
+            text-align: left;
+        }
+
+
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #8b7355;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            .profile-name {
+                font-size: 24px;
+            }
+            
+            .link-item {
+                padding: 14px 20px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- プロフィール画像（ご自身の画像URLに変更してください） -->
+        <img src="https://via.placeholder.com/120x120/8b7355/f5f0e6?text=YOU" alt="Profile" class="profile-image">
+        
+        <!-- 名前とバイオ（編集してください） -->
+        <h1 class="profile-name">Your Name</h1>
+        <p class="profile-bio">クリエイター・デザイナー<br>あなたの簡単な自己紹介をここに書いてください</p>
+        
+        <!-- リンク一覧（URLを実際のものに変更してください） -->
+        <div class="links">
+            <a href="https://instagram.com/yourusername" class="link-item instagram" target="_blank">
+                <img src="https://via.placeholder.com/24x24/f5f0e6/8b7355?text=📷" alt="Instagram" class="link-icon">
+                <span class="link-text">Instagram</span>
+            </a>
+            
+            <a href="https://twitter.com/yourusername" class="link-item twitter" target="_blank">
+                <img src="https://via.placeholder.com/24x24/f5f0e6/8b7355?text=🐦" alt="Twitter" class="link-icon">
+                <span class="link-text">Twitter</span>
+            </a>
+            
+            <a href="https://youtube.com/c/yourchannel" class="link-item youtube" target="_blank">
+                <img src="https://via.placeholder.com/24x24/f5f0e6/8b7355?text=📺" alt="YouTube" class="link-icon">
+                <span class="link-text">YouTube</span>
+            </a>
+            
+            <a href="https://github.com/yourusername" class="link-item github" target="_blank">
+                <img src="https://via.placeholder.com/24x24/f5f0e6/8b7355?text=💻" alt="GitHub" class="link-icon">
+                <span class="link-text">GitHub</span>
+            </a>
+            
+            <a href="https://yourwebsite.com" class="link-item website" target="_blank">
+                <img src="https://via.placeholder.com/24x24/f5f0e6/8b7355?text=🌐" alt="Website" class="link-icon">
+                <span class="link-text">Website</span>
+            </a>
+            
+            <a href="mailto:your.email@example.com" class="link-item email">
+                <img src="https://via.placeholder.com/24x24/f5f0e6/8b7355?text=✉️" alt="Email" class="link-icon">
+                <span class="link-text">Contact</span>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Your Name</p>
+        </div>
+    </div>
+</body>
+</html>
